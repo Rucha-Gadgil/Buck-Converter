@@ -1,7 +1,11 @@
 # Buck Converter — 10V → 2–8V @ 1A  
 **Power Electronics Course Project · March – April 2026**
 
-> Designed, analytically derived, simulated, and hardware-validated a synchronous buck converter using a TL494 PWM controller, TC4428A gate driver, and IRFZ44N MOSFET on perfboard. Key contribution: full CCM/DCM boundary characterisation across duty cycles, validated at two switching frequencies on physical hardware.
+This project presents the complete design, simulation, and hardware validation of a PWM-controlled DC-DC Buck Converter capable of stepping down a 10V input supply to a regulated output voltage between 2V and 8V at load currents up to 1A.
+
+The converter was implemented using the TL494 PWM controller, TC4428A gate driver, and IRFZ44N MOSFET, 1mH inductor and 220uF capacitor. Analytical derivations were performed to determine CCM/DCM boundary conditions, critical load resistance, and switching frequency requirements. Theoretical predictions were validated through MATLAB Simulink simulations and experimental hardware testing.
+
+The converter achieved approximately 8 mV peak-to-peak output ripple at 20 kHz and a peak efficiency of 94% at rated load conditions.
 
 ---
 
