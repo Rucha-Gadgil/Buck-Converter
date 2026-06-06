@@ -1,5 +1,4 @@
-# Buck Converter — 10V → 2–8V @ 1A  
-**Power Electronics Course Project · March – April 2026**
+# Buck Converter  
 
 This project presents the complete design, simulation, and hardware validation of a PWM-controlled DC-DC Buck Converter capable of stepping down a 10V input supply to a regulated output voltage between 2V and 8V at load currents up to 1A.
 
@@ -96,7 +95,7 @@ This sets the **maximum switching frequency** that still ensures DCM at 8 Ω —
 
 > *Insert plot: R_crit vs. Duty Cycle across the D = 0.2–0.8 range*
 
-![CCM/DCM Boundary Plot](docs/images/waveforms/ccm_dcm_boundary.png)
+![CCM/DCM Boundary Plot](https://github.com/Rucha-Gadgil/Buck-Converter/blob/14c6a0dcea977c7bbd58cdc8a9ca85396e4316e3/R_crit%20vs%20Duty%20cycle.png)
 
 ---
 
@@ -115,36 +114,31 @@ This sets the **maximum switching frequency** that still ensures DCM at 8 Ω —
 
 ### MATLAB Simulink — 20 kHz (CCM)
 
-> *Insert Simulink schematic screenshot*
+
 
 ![Simulink Model](https://github.com/Rucha-Gadgil/Buck-Converter/blob/dfb41bd0d7000d2707755fbfc516b522f5776c5e/Circuit%20Diagram.png)
 
 - Output ripple: **8 mV** at 20 kHz, 1A load (matches analytical prediction)
 - Inductor current waveform confirms continuous conduction
 
-> *Insert inductor current and output voltage waveforms*
 
-![Simulation Waveforms](docs/images/waveforms/simulink_waveforms.png)
-
----
-
-### Hardware — 800 Hz (DCM Validation)
-
-> *Insert oscilloscope capture showing inductor current touching zero*
-
-![DCM Waveform — 800 Hz](docs/images/waveforms/hardware_dcm_800hz.png)
-
-- Inductor current ramps to zero each cycle ✓ — confirms DCM prediction
+![Simulation Waveforms](https://github.com/Rucha-Gadgil/Buck-Converter/blob/14c6a0dcea977c7bbd58cdc8a9ca85396e4316e3/Output%20Voltage%20.png)
 
 ---
 
 ### Hardware — 20 kHz (CCM Validation)
 
-> *Insert oscilloscope capture showing continuous inductor current*
-
-![CCM Waveform — 20 kHz](docs/images/waveforms/hardware_ccm_20khz.png)
+![CCM Waveform — 20 kHz](https://github.com/Rucha-Gadgil/Buck-Converter/blob/14c6a0dcea977c7bbd58cdc8a9ca85396e4316e3/CCM%20inductor%20current.png)
 
 - Efficiency measured: **94% at 1A output**
+
+---
+
+### Hardware — 800 Hz (DCM Validation)
+
+![DCM Waveform — 800 Hz](https://github.com/Rucha-Gadgil/Buck-Converter/blob/14c6a0dcea977c7bbd58cdc8a9ca85396e4316e3/DCM%20at%20800Hz.png)
+
+- Inductor current ramps to zero each cycle ✓ — confirms DCM prediction
 
 ---
 
@@ -163,10 +157,3 @@ This sets the **maximum switching frequency** that still ensures DCM at 8 Ω —
 - Microchip, *TC4428A Datasheet*
 - Vishay, *IRFZ44N Datasheet*
 
----
-
-## 👤 Author
-
-**[Your Name]**  
-Power Electronics Course · [Your University] · 2026  
-[LinkedIn](https://linkedin.com/in/yourprofile) · [Email](mailto:you@example.com)
