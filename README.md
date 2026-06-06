@@ -117,7 +117,7 @@ This sets the **maximum switching frequency** that still ensures DCM at 8 Ω —
 
 > *Insert Simulink schematic screenshot*
 
-![Simulink Model](assets/CircuitDiagram.png)
+![Simulink Model](https://github.com/Rucha-Gadgil/Buck-Converter/blob/dfb41bd0d7000d2707755fbfc516b522f5776c5e/Circuit%20Diagram.png)
 
 - Output ripple: **8 mV** at 20 kHz, 1A load (matches analytical prediction)
 - Inductor current waveform confirms continuous conduction
